@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-@theme {
-  --color-mint-500: oklch(0.72 0.11 178);
-  --color-mint-200: oklch(0.72 0.11 178 / 0.5);
-  --font-audiowide: "Audiowide", sans-serif;
-  --font-sriracha: "Sriracha", sans-serif;
-}
