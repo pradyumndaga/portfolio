@@ -18,40 +18,40 @@ const Body = () => {
           <div className="flex flex-wrap justify-around items-center mr-2 flex-1/3 border-2 rounded-lg text-gray-800 p-2 overflow-hidden">
             <div className="flex gap-2 p-2 items-center bg-gray-800 text-white rounded-lg">
               <img
-                src=".\src\assets\angular.png"
+                src="./assets/angular.png"
                 alt="angular"
                 className="bg-gray-800 rounded-full h-10 w-10 p-1"
               />
               <label>Angular</label>
             </div>
             <img
-              src=".\src\assets\angular.png"
+              src="./assets/angular.png"
               alt="angular"
               className="bg-gray-800 rounded-full h-20 w-20 p-1"
             />
             <img
-              src=".\src\assets\react.svg"
+              src="./assets/react.svg"
               alt="react"
               className="bg-gray-800 rounded-full h-20 w-20 p-1"
             />
             <img
-              src=".\src\assets\nodejs.png"
+              src="./assets/nodejs.png"
               alt="vue"
               className="bg-gray-800 rounded-full h-20 w-20 p-1"
             />
             <img
-              src=".\src\assets\mongodb.png"
+              src="./assets/mongodb.png"
               alt="svelte"
               className="bg-gray-800 rounded-full h-20 w-20 p-1"
             />
             <img
-              src=".\src\assets\vite.svg"
+              src="./assets/vite.svg"
               alt="svelte"
               className="bg-gray-800 rounded-full h-20 w-20 p-1"
             />
           </div>
           {/* <div className='flex flex-col gap-2 p-2'>
-                    <img src=".\src\assets\avatar.png" alt="Pradyumn Daga" className="rounded-full h-40 w-40" />
+                    <img src="./assets/avatar.png" alt="Pradyumn Daga" className="rounded-full h-40 w-40" />
                     <ul className='flex gap-2 p-2 justify-center items-center bg-gray-800 rounded-lg'>
                         <li className='border-1 p-2 rounded-full hover:text-mint-500 cursor-pointer'><GithubIcon /></li>
                         <li className='border-1 p-2 rounded-full hover:text-mint-500 cursor-pointer'><Linkedin /></li>
@@ -84,7 +84,7 @@ const Body = () => {
         </div>
         <div className="flex item-3 flex-col items-center gap-2 p-2">
           <img
-            src=".\src\assets\avatar.png"
+            src="./assets/avatar.png"
             alt="Pradyumn Daga"
             className="rounded-full h-40 w-40"
           />
@@ -128,8 +128,8 @@ const Body = () => {
             <div className='flex mr-2 flex-1/3 border-2 rounded-lg text-white p-2'>
             <h2>Skills</h2>
 
-            <img src=".\src\assets\angular.png" alt="angular" className='bg-gray-800 rounded-full h-20 w-20 p-1' />
-            <img src=".\src\assets\react.svg" alt="angular" className='bg-gray-800 rounded-full h-20 w-20 p-1' />
+            <img src="./assets/angular.png" alt="angular" className='bg-gray-800 rounded-full h-20 w-20 p-1' />
+            <img src="./assets/react.svg" alt="angular" className='bg-gray-800 rounded-full h-20 w-20 p-1' />
             </div>
             <div className='flex ml-2 flex-2/3 flex-col'>
             <div className='flex border-2 rounded-lg text-white'>Projects</div>
