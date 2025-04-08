@@ -10,8 +10,7 @@ const Body = () => {
               {/* <h1 className="text-4xl w-fit rounded-lg p-2 bg-gray-800 text-mint-500 font-sriracha">Pradyumn Daga</h1> */}
               <p className="ml-2 text-xl font-bold">
                 {" "}
-                Hi, I'm a Software Engineer. I like to build things that work
-                and scroll through memes.
+                Hi, I'm a Software Engineer from Pune, India. Building reliable tech solutions for 4+ years.
               </p>
             </div>
           </div>
@@ -31,11 +30,11 @@ const Body = () => {
               alt="vue"
               className="bg-gray-800 rounded-full h-20 w-20 p-1 shadow-xl"
             />
-            <img
+            {/* <img
               src="assets/mongodb.png"
               alt="svelte"
               className="bg-gray-800 rounded-full h-20 w-20 p-1 shadow-xl"
-            />
+            /> */}
             <img
               src="assets/vite.svg"
               alt="svelte"
@@ -55,7 +54,7 @@ const Body = () => {
 
       <div className="flex flex-col md:flex-row p-4 gap-4 w-full justify-around items-center flex-wrap border-2 rounded-lg border-gray-800">
         <div className="flex md:w-1/3 item-1 flex-col justify-center items-center">
-          <h1>Need help with ?</h1>
+          <h1>My Services</h1>
           <div className="flex justify-end items-center text-4xl font-bold font-audiowide">
             <Typewriter
               options={{
@@ -63,7 +62,6 @@ const Body = () => {
                   "Web Apps",
                   "Mobile Apps",
                   "APIs",
-                  "AI/ML",
                   "Devops",
                   "Databases",
                 ],
@@ -95,7 +93,9 @@ const Body = () => {
               </a>
             </li>
             <li className="border-1 p-2 rounded-full hover:text-mint-500 cursor-pointer">
-              <Mail />
+              <a href="mailto:pradyumndaga28@gmail.com">
+                <Mail />
+              </a>
             </li>
           </ul>
         </div>

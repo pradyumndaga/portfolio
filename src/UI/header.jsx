@@ -7,20 +7,26 @@ const Header = () => {
         Pradyumn Daga
       </h1>
       <div className="flex flex-wrap gap-4">
-        <button className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer">
+        {/* <button className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer">
           <Home />
-        </button>
-        <button className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer">
+        </button> */}
+        {/* <button className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer">
           <Folder />
-        </button>
-        <button className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer">
+        </button> */}
+        <a
+          href="tel:+917044282111"
+          className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer flex items-center"
+        >
           <Phone />
-        </button>
-      <button className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer">
-        <Download />
-      </button>
+        </a>
+        <a
+          href="assets/resume.pdf" // Replace with the correct path to your resume file
+          download="Pradyumn_Daga_Resume.pdf"
+          className="text-white text-2xl border p-2 rounded-lg hover:text-mint-500 cursor-pointer flex items-center"
+        >
+          <Download />
+        </a>
       </div>
-
     </div>
   );
 };
