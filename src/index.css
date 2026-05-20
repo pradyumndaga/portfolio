@@ -2,7 +2,108 @@
 
 @theme {
   --color-mint-500: oklch(0.72 0.11 178);
-  --color-mint-200: oklch(0.72 0.11 178 / 0.5);
   --font-audiowide: "Audiowide", sans-serif;
-  --font-sriracha: "Sriracha", sans-serif;
+  --font-sriracha:  "Sriracha", sans-serif;
 }
+
+/* ── Reset & base ─────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #07071b;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Custom utilities ─────────────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #c4b5fd 0%, #818cf8 60%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: rgba(7, 7, 27, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.card {
+  background: #0e0e2d;
+  border: 1px solid rgba(129, 140, 248, 0.1);
+  border-radius: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+  border-color: rgba(129, 140, 248, 0.35);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.section-label {
+  font-family: "Audiowide", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #818cf8;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: #07071b; }
+::-webkit-scrollbar-thumb { background: #4338ca; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #818cf8; }
+
+/* ── Keyframes ───────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 12px rgba(129, 140, 248, 0.2); }
+  50%       { box-shadow: 0 0 32px rgba(129, 140, 248, 0.5); }
+}
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes spinSlowR {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+@keyframes progressFill {
+  from { width: 0%; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Animation classes ───────────────────────────────────────────────── */
+.animate-fade-up          { animation: fadeUp 0.65s ease-out forwards; opacity: 0; }
+.animate-float            { animation: float 3.5s ease-in-out infinite; }
+.animate-pulse-glow       { animation: pulseGlow 2.5s ease-in-out infinite; }
+.animate-spin-slow        { animation: spinSlow  14s linear infinite; }
+.animate-spin-slow-reverse{ animation: spinSlowR 20s linear infinite; }
+
+.delay-0  { animation-delay: 0s; }
+.delay-1  { animation-delay: 0.08s; }
+.delay-2  { animation-delay: 0.16s; }
+.delay-3  { animation-delay: 0.24s; }
+.delay-4  { animation-delay: 0.32s; }
+.delay-5  { animation-delay: 0.42s; }
+.delay-6  { animation-delay: 0.54s; }
+
+/* keep legacy class names working */
+.animate-fade-slide-up { animation: fadeUp 0.65s ease-out forwards; opacity: 0; }
+.delay-100 { animation-delay: 0.10s; }
+.delay-200 { animation-delay: 0.20s; }
+.delay-300 { animation-delay: 0.30s; }
+.delay-400 { animation-delay: 0.40s; }
+.delay-500 { animation-delay: 0.50s; }
